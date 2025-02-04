@@ -32,7 +32,7 @@ model User {
   likes Like[] // One-to-many relation
 
   followers Follows[] @relation("following") // users who follow this user
-  folllowing Follows[] @relation("follower") // users this user follows
+  following Follows[] @relation("follower") // users this user follows
 
   notifications Notification[] @relation("userNotifications") // notifications received
   notificationsCreated Notification[] @relation("notificationCreator") // notifications created by a user
